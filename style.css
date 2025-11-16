@@ -328,6 +328,11 @@ h3 { font-size: var(--fs-h3) }
     max-width: 500px;
     margin: 0 auto ;
 }
+
+.my-services p{
+    line-height: 1.6;
+}
+
 @media (min-width: 800px) {
    .services{
         display: flex;
@@ -346,6 +351,16 @@ h3 { font-size: var(--fs-h3) }
 .about-me__img{
     box-shadow: var(--bs);
 }
+
+.about-me p{
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+    margin-bottom: 1.5em;
+
+}
+
 
 @media (min-width: 600px){
     .about-me{
