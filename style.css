@@ -415,6 +415,45 @@ h3 { font-size: var(--fs-h3) }
     opacity: 0.80;
 }
 
+/* skill section */
+
+.my-skills {
+    background-color: var(--clr-light);
+    text-align: center;
+    padding: 5em 2em;
+}
+
+.section__title--skills {
+    margin-bottom: 2em;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2em;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.skill {
+    background: var(--clr-light);
+    padding: 1.5em;
+    border-radius: 8px;
+    box-shadow: var(--bs);
+}
+
+.skill h3 {
+    color: var(--clr-accent);
+    margin-bottom: 0.5em;
+}
+
+.skill__icon {
+    font-size: 3rem;
+    color: var(--clr-accent);
+    margin-bottom: 0.5em;
+}
+
+
 /* footer */
 
 .footer{
