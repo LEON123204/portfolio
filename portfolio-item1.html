@@ -1,81 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>DevJane Portfolio Website</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
-        
-<link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet"> 
-                <link rel="stylesheet" href="style.css">
 
-    </head>
-    <body>
-        <header>
-            <div class="logo">
-                <img src="img/devjane.png" alt="">
-            </div>
-            <button class="nav-toggle" aria-label="toggle navigation">
-                <span class="hamburger"></span>
-            </button>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
-                    <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
-                </ul>
-            </nav>
-        </header>
-        
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevJane Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
 
-        <section class="intro">
-            <h1 class="section__title section__title--intro">
-                The title <strong>of my project</strong>
-            </h1>
-            <p class="section__subtitle section__subtitle--intro">A short subtitle</p>
-            <img src="img/portfolio-01.jpg" alt="" class="intro__img">
-        </section>
-        
-        <div class="portfolio-item-individual">
-            <p>Voluptatibus, soluta blanditiis! Incidunt ea unde itaque illo molestiae eligendi sint culpa nobis voluptas sapiente voluptate, magnam ipsum eius earum?</p>
-            <img src="img/portfolio-details.jpg" alt="">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe et amet tenetur! Fugit sequi optio corrupti fugiat ducimus consequatur incidunt?</p>
-            <p>Voluptatibus, soluta blanditiis! Incidunt ea unde itaque illo molestiae eligendi sint culpa nobis voluptas sapiente voluptate, magnam ipsum eius earum?</p>
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/devjane.png" alt="">
         </div>
-        
-        
-       
-        <footer class="footer">
-            
-            <a href="zuhaibx3026@gmail.com" class="footer__link">hello@jane.dev</a>
-            <ul class="social-list">
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://codepen.io">
-                        <i class="fab fa-codepen"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="http://dribbble.com">
-                        <i class="fab fa-dribbble"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://twitter.com">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://github.com">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </li>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+                <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
+                <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
             </ul>
-        </footer>
-        
-        
-        <script src="script.js"></script>
-        
-    </body>
+        </nav>
+    </header>
+
+
+    <section class="intro">
+        <h1 class="section__title section__title--intro">
+            The<strong>TO DO LIST</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">TO DO LIST WEB APP</p>
+        <img src="img/todo-app-screenshot3.png" alt="" class="intro__img">
+    </section>
+
+    <div class="portfolio-item-individual">
+    <p>The Todo List is a fully-functional task management application built with vanilla JavaScript. It
+        demonstrates core web development concepts including DOM manipulation, event handling, and client-side data
+        persistence</p>
+    <img src="img/todo-app-screenshot2.png" alt="">
+    <p>Key features include real-time task filtering, input validation, and a clean, intuitive user interface. The
+        application uses localStorage to persist data across browser sessions, ensuring users never lose their
+        tasks.</p>
+    <p>This project showcases my ability to build complete, user-focused applications without relying on frameworks,
+        emphasizing fundamental JavaScript skills and attention to user experience details.</p>
+
+    <h3>Features</h3>
+    <ul>
+        <li><strong>Add & Delete Tasks:</strong> Create new tasks with minimum 3-character validation. Delete individual
+            tasks with confirmation dialog (hover to reveal delete button).</li>
+
+        <li><strong>Mark as Complete:</strong> Click checkbox to mark tasks complete. Completed tasks display with
+            strikethrough styling for clear visual feedback.</li>
+
+        <li><strong>Smart Filtering:</strong> Filter tasks by status - view All tasks, Active tasks only, or Completed
+            tasks. Active task counter updates in real-time.</li>
+
+        <li><strong>Data Persistence:</strong> All tasks are saved to localStorage, ensuring your todo list persists
+            across browser sessions and page refreshes.</li>
+
+        <li><strong>Bulk Actions:</strong> Clear all completed tasks at once with the "Clear Completed" button for easy
+            list management.</li>
+
+        <li><strong>Input Validation:</strong> Prevents empty tasks and requires minimum 3 characters. User-friendly
+            alerts guide proper input.</li>
+    </ul>
+
+    <h3>Technologies Used</h3>
+    <ul class="tech-stack">
+        <li>HTML5 - Semantic structure</li>
+        <li>CSS3 - Responsive styling and animations</li>
+        <li>Vanilla JavaScript (ES6+) - Core functionality</li>
+        <li>localStorage API - Data persistence</li>
+        <li>GitHub Pages - Deployment</li>
+    </ul>
+
+
+</div>
+<div class="portfolio-item-individual">
+    <div class="project-links">
+        <a href="https://leon123204.github.io/To-Do-List/" target="_blank" class="btn">View Live Demo</a>
+        <a href="https://github.com/leon123204/To-Do-List" target="_blank" class="btn btn--secondary">View Code</a>
+    </div>
+</div>
+
+  <footer class="footer">
+    <a href="mailto:zuhaibx3026@gmail.com" class="footer__link">zuhaibx3026@gmail.com</a>
+    <ul class="social-list">
+        <li class="social-list__item">
+            <a class="social-list__link" href="https://github.com/leon123204" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+        </li>
+        <li class="social-list__item">
+            <a class="social-list__link" href="https://www.linkedin.com/in/mohammed-suhaib-p-s-127476383/" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </li>
+        <li class="social-list__item">
+            <a class="social-list__link" href="https://www.instagram.com/z_uhaib___/" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </li>
+    </ul>
+</footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
 </html>
