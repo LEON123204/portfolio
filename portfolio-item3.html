@@ -1,79 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>DevJane Portfolio Website</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
-<link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet"> 
-                <link rel="stylesheet" href="style.css">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Weather App — DevJane Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="img/devjane.png" alt="DevJane logo">
+    </div>
+    <button class="nav-toggle" aria-label="toggle navigation">
+      <span class="hamburger"></span>
+    </button>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+        <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+        <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
+        <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    </head>
-    <body>
-        <header>
-            <div class="logo">
-                <img src="img/devjane.png" alt="">
-            </div>
-            <button class="nav-toggle" aria-label="toggle navigation">
-                <span class="hamburger"></span>
-            </button>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
-                    <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
-                </ul>
-            </nav>
-        </header>
-        
+  <section class="intro">
+    <h1 class="section__title section__title--intro">
+      The <strong>WEATHER APP</strong>
+    </h1>
+    <p class="section__subtitle section__subtitle--intro">• OpenWeatherMap API</p>
+    <img src="img/weather-screenshot3.png" alt="Weather app hero screenshot" class="intro__img">
+  </section>
 
-        <section class="intro">
-            <h1 class="section__title section__title--intro">
-                The title <strong>of my project</strong>
-            </h1>
-            <p class="section__subtitle section__subtitle--intro">A short subtitle</p>
-            <img src="img/portfolio-03.jpg" alt="" class="intro__img">
-        </section>
-        
-        <div class="portfolio-item-individual">
-            <p>Voluptatibus, soluta blanditiis! Incidunt ea unde itaque illo molestiae eligendi sint culpa nobis voluptas sapiente voluptate, magnam ipsum eius earum?</p>
-            <img src="img/portfolio-details.jpg" alt="">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe et amet tenetur! Fugit sequi optio corrupti fugiat ducimus consequatur incidunt?</p>
-            <p>Voluptatibus, soluta blanditiis! Incidunt ea unde itaque illo molestiae eligendi sint culpa nobis voluptas sapiente voluptate, magnam ipsum eius earum?</p>
-        </div>
-        
-        
+  <div class="portfolio-item-individual">
+    <p>
+      The Weather App is a small, focused front-end project that fetches live weather data from the OpenWeatherMap API
+      and presents it in a clean, accessible UI. It demonstrates asynchronous data fetching, graceful error handling,
+      responsive layout, and a polished interactive experience suitable for both mobile and desktop.
+    </p>
 
-        <footer class="footer">
-            <a href="zuhaibx3026@gmail.com" class="footer__link">zuhaibx</a>
-            <ul class="social-list">
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://codepen.io">
-                        <i class="fab fa-codepen"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="http://dribbble.com">
-                        <i class="fab fa-dribbble"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://twitter.com">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://github.com">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </li>
-            </ul>
-        </footer>
-        
-        
-        <script src="script.js"></script>
-        
-    </body>
+    <img src="img/weather-screenshot1.png" alt="Weather app screenshot showing search and current temperature">
+
+    <p>
+      Users can search by city name to get current temperature, humidity, wind speed and a short weather description.
+      The app includes a loading state, descriptive error messages for unknown locations or network errors, and
+      small UI touches such as keyboard-accessible search, clear input behavior, and animated iconography.
+    </p>
+
+    <p>
+      Designed with a focus on clarity and usability: results are shown prominently with clear labels and units,
+      and the layout adapts so the app looks great on small screens and as a centered card on large screens.
+    </p>
+
+    <h3>Features</h3>
+    <ul>
+      <li><strong>City search:</strong> Type a city name and hit Enter or click search to fetch live weather data.</li>
+      <li><strong>Current conditions:</strong> Temperature (°C), humidity, wind speed, and a short description.</li>
+      <li><strong>Visuals:</strong> Weather icon + card UI with subtle gradient and responsive layout.</li>
+      <li><strong>Loading & error states:</strong> Clear feedback while fetching, and helpful messages for "city not found" or network issues.</li>
+      <li><strong>Keyboard accessibility:</strong> Search via Enter, Escape or Clear; focus states for better keyboard navigation.</li>
+      <li><strong>Small footprint:</strong> Vanilla JS (no frameworks), semantic HTML and CSS with accessible controls.</li>
+    </ul>
+
+    <h3>Tech / Implementation details</h3>
+    <ul class="tech-stack">
+      <li>HTML5 — semantic structure and accessible form controls</li>
+      <li>CSS3 — responsive card layout and polished styling that matches the portfolio</li>
+      <li>Vanilla JavaScript (ES6+) — fetch + async/await, DOM updates and keyboard handlers</li>
+      <li>OpenWeatherMap API — current weather endpoint; API key stored in script (for production store on server)</li>
+      <li>Progressive UX — loading indicator, debounce input (optional), and friendly error messages</li>
+      <li>Deployed on GitHub Pages — instant demo hosting</li>
+    </ul>
+
+    <div class="project-links">
+      <a href="https://leon123204.github.io/weather-app/" target="_blank" rel="noopener" class="btn">View Live Demo</a>
+      <a href="https://github.com/LEON123204/weather-app" target="_blank" rel="noopener" class="btn btn--secondary">View Code</a>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <a href="mailto:zuhaibx3026@gmail.com" class="footer__link">zuhaibx3026@gmail.com</a>
+    <ul class="social-list">
+        <li class="social-list__item">
+            <a class="social-list__link" href="https://github.com/leon123204" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+        </li>
+        <li class="social-list__item">
+            <a class="social-list__link" href="https://www.linkedin.com/in/mohammed-suhaib-p-s-127476383/" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </li>
+        <li class="social-list__item">
+            <a class="social-list__link" href="https://www.instagram.com/z_uhaib___/" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </li>
+    </ul>
+</footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
