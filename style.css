@@ -12,7 +12,7 @@
     --fw-reg: 500;
     --fw-bold: 700;
     
-    --clr-light: #fff;
+    --clr-light: #fffefe;
     --clr-dark: #303030;
     --clr-accent: #16e0bd;
     
@@ -256,10 +256,14 @@ h3 { font-size: var(--fs-h3) }
 
 .intro{
     position: relative;
+    gap: 3rem;
+    padding-top: 4em ;
 }
 
 .intro__img{
     box-shadow: var(--bs);
+    border-radius: 8px ;
+    width: 210px;
 }
 
 .section__subtitle--intro{
